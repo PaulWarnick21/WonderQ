@@ -1,0 +1,35 @@
+{
+  "name": "wonderq",
+  "version": "1.0.0",
+  "description": "A queuing service based of Amazon's SQS",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PaulWarnick21/WonderQ.git"
+  },
+  "keywords": [
+    "SQS"
+  ],
+  "author": "Paul Warnick",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/PaulWarnick21/WonderQ/issues"
+  },
+  "homepage": "https://github.com/PaulWarnick21/WonderQ#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "uuid": "^8.3.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  },
+  "nodemonConfig": {
+    "ignore": [
+      "node_modules/"
+    ]
+  }
+}

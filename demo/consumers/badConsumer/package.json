@@ -1,0 +1,18 @@
+{
+  "name": "badconsumer",
+  "version": "1.0.0",
+  "description": "A demon consumer that fails to process values for WonderQ",
+  "main": "badConsumer.js",
+  "scripts": {
+    "start": "nodemon badConsumer.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Paul Warnick",
+  "license": "MIT",
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  },
+  "dependencies": {
+    "axios": "^0.20.0"
+  }
+}
