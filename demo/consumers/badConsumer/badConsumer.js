@@ -8,6 +8,11 @@ const axios = require('axios');
 */
 setInterval(() => {
 	axios.get('http://localhost:8080/messages')
+	.then((res) => {
+		if (res.data.message == null) {
+			console.log("No elements currently available for processing");
+		}
+	})
 	.catch((error) => {
 		console.log(error);
 	});
