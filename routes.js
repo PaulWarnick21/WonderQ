@@ -48,7 +48,7 @@ module.exports = function(app) {
 
 			return res.status(200).json({
 				status: 'success'
-			})
-		})
-	})
+			});
+		});
+	});
 }
