@@ -46,6 +46,15 @@ npm install && npm start
 ```
 This will cause messages to be consumed from the queue every second, but they will not be deleted and thus we become available for processing again after the visiblityTimeout set in WonderQ.
 
+### Testing
+
+To test WonderQ run:
+
+```
+cd WonderQ
+npm install && npm test
+```
+
 ### Further Improvements
 
 Currently WonderQ is a very simple queuing service and there is a lot of room for improvement. As of right now we're only using an in-memory array to store the queue as well as multiple for-loops to iterate through the array. Additionally, each stored message is a custom object which could be redesigned to improve performance. Here are some ideas to increase scalability:
